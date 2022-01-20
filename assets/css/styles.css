@@ -34,7 +34,7 @@ html, body {
 }
 
 /* css resets */
-* {
+*, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -44,15 +44,12 @@ ul {
   list-style-type: none;
 }
 
-body {
-  font-family: var(--font-family);
-  width: fit-content;
-}
 p{
   overflow: hidden;
 }
 /* nav */
 nav {
+  width: 100%;
   position: sticky;
   top: 0;
   left: 0;
@@ -102,13 +99,10 @@ nav ul li {
   cursor: pointer;
   display: none;
 }
-.container{
-  max-width: 100%;
-}
 
 .hero-container {
   background: url(https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=829&q=80) top/cover;
-  padding: 5rem 0 9rem 0;
+  padding: 5rem 0 8rem 0;
   -webkit-mask:
     radial-gradient(var(--r1,160%) var(--r2,68.15%) at top   ,white 79.5%,transparent 80%) top left,
     radial-gradient(var(--r1,160%) var(--r2,68.15%) at bottom,transparent 79.5%,white 80%) top center,
@@ -117,12 +111,21 @@ nav ul li {
     radial-gradient(var(--r1,160%) var(--r2,68.15%) at top   ,white 79.5%,transparent 80%) top left,
     radial-gradient(var(--r1,160%) var(--r2,68.15%) at bottom,transparent 79.5%,white 80%) top center,
     radial-gradient(var(--r1,160%) var(--r2,68.15%) at top   ,white 79.5%,transparent 80%) top right;
-  -webkit-mask-size:33.4% 180%; 
+   -webkit-mask-size:33.4% 180%; 
   -webkit-mask-repeat:no-repeat;
-  mask-size:33.4% 100%;
+  mask-size:33.4% 180%;
   mask-repeat:no-repeat;
-  max-height: 100vh;
+  height: 100%;
+  background-size: cover;
 }
+
+@-moz-document url-prefix() {
+  .hero-container {
+    height: 100%;
+    background-size: cover;
+  }
+}
+
 .hero,.skills {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -152,7 +155,7 @@ nav ul li {
 }
 
 .name-box{
-  width: 280px;
+  width: 300px;
   height: 100px;
   position: relative;
   display: flex;
@@ -164,7 +167,7 @@ nav ul li {
   position: relative;
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 60px;
 }
 .block{
   width: 0%;
@@ -380,7 +383,7 @@ nav ul li {
 .skill{
   width: 500px;
   color: var(--primary-color);
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 /* -----Section heading with shadow outline----- */
@@ -812,10 +815,95 @@ footer {
 
 /* Responsive Layout for mobile devices */
 @media screen and (max-width: 800px) {
-  .hero-container{
-    max-width: 100%;
-    max-height: 100%;
-  }
+
+  
+.hero-container{
+  width: 100%;
+  background-size: cover;
+}
+.hero, .skills{
+  grid-template-columns: 1fr;
+  grid-template-areas: 'right-column' 'left-column';
+}
+nav {
+  padding: 1.5rem 1rem;
+}
+
+nav ul {
+  position: fixed;
+  background: linear-gradient(185deg, rgba(195,69,157,1) 19%, rgba(46,40,172,1) 100%);
+  flex-direction: column;
+  border-radius: 20px;
+  font-family: var(--josefin-sans);
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  top: 86px;
+  left: 10%;
+  width: 80%;
+  text-align: center;
+  transform: translateX(120%);
+  transition: transform 0.5s ease-in;
+}
+
+nav ul li {
+  margin: 8px;
+}
+
+.burger-menu {
+  display: block;
+}
+
+nav ul.show {
+  transform: translateX(0);
+}
+
+.hero-container{
+  width: 100%;
+  background-size: cover;
+}
+
+.hero img {
+  height: 200px;
+  width: 200px;
+}
+
+.bio {
+  margin-top: 0.5rem;
+  width: 25rem;
+}
+
+/* More about me */
+.more-about {
+  margin-top: 2rem;
+  padding: 1rem 3.5rem;
+}
+
+.about-text {
+  text-align: center;
+  font-family: var(--dongle-font);
+}
+
+/* skill section */
+.skill{
+  width: 300px;
+  padding: 0rem;
+}
+.hero, .skills{
+  grid-template-columns: 1fr;
+  grid-template-areas: 'right-column' 'left-column';
+}
+.name-box{
+  max-width: 100%;
+}
+
+/* -------Project Section------- */
+
+/* Contact section */
+.contact-form-container {
+  max-width: 23.75rem;
+}
+
 }
 
 @media screen and (max-width: 720px) {
@@ -852,6 +940,11 @@ footer {
     transform: translateX(0);
   }
 
+  .hero-container{
+    width: 100%;
+    background-size: cover;
+  }
+
   .hero img {
     height: 200px;
     width: 200px;
@@ -874,9 +967,9 @@ footer {
   }
 
   /* skill section */
-  .hero-container{
-    max-width: 100%;
-    max-height: 100%;
+  .skill{
+    width: 300px;
+    padding: 0rem;
   }
   .hero, .skills{
     grid-template-columns: 1fr;
@@ -906,7 +999,10 @@ footer {
     width: 18.3rem;
   }
 
-
+  .hero-container{
+    width: 100%;
+    background-size: cover;
+  }
   .contact-form-container {
     max-width: 17.75rem;
   }
