@@ -984,6 +984,23 @@ nav ul.show {
 }
 
 @media screen and (max-width: 420px) {
+  .hero-btn-1, .hero-btn-2{
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--pink-color);
+  background-color: var(--pink-color);
+  border-radius: 1.25rem;
+  text-decoration: none;
+  color: #fff;
+}
+.hero-btn-2{
+  margin-left: 0.4rem;
+}
+.hero-btn-1:hover, .hero-btn-2:hover{
+  border: 1px solid var(--primary-shadow);
+  background-color: var(--blue-button);
+  color: #fff;
+}
+  
   .hero-img {
     padding-left: 0px;
     height: 12.5rem;
