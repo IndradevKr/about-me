@@ -29,7 +29,7 @@
 }
 /* variables end */
 
-html, body {
+html, body{
   scroll-behavior: smooth;
 }
 
@@ -148,15 +148,15 @@ nav ul li {
 /* NAME WITH ANIMATION */
 .name-container{
   width: 100%;
-  height: 100px;
+  height: 6.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .name-box{
-  width: 300px;
-  height: 100px;
+  width: 18.75rem;
+  height: 6.25rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -167,7 +167,7 @@ nav ul li {
   position: relative;
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 6.25rem;
 }
 .block{
   width: 0%;
@@ -199,7 +199,7 @@ nav ul li {
   animation: popIn 0.8s cubic-bezier(.74, .06, .4, .92) forwards;
   animation-delay: 2s;
   margin-left: 5px;
-  margin-top: -10px;
+  margin-top: -0.625rem;
   position: absolute;
   bottom: 13px;
   right: -12px;
@@ -211,7 +211,7 @@ nav ul li {
   display: flex;
   align-items: center;
   height: 30px;
-  margin-top: -10px;
+  margin-top: -0.625rem;
 }
 .role > span{
   width: 0%;
@@ -278,26 +278,26 @@ nav ul li {
     opacity: 0;
   }
   50%{
-    width: 10px;
-    height: 10px;
+    width: 0.625rem;
+    height: 0.625rem;
     background: var(--primary-color);
     opacity: 1;
-    bottom: 45px;
+    bottom: 2.813rem;
   }
   65%{
-    width: 7px;
-    height: 7px;
+    width: 0.438rem;
+    height: 0.438rem;
     bottom: 0px;
     width: 15px;
   }
   80%{
-    width: 10px;
-    height: 10px;
-    bottom: 20px;
+    width: 0.625rem;
+    height: 0.625rem;
+    bottom: 1.25rem;
   }
   100%{
-    width: 7px;
-    height: 7px;
+    width: 0.438rem;
+    height: 0.438rem;
     background: var(--primary-color);
     border: 0px solid #222;
     bottom: 8px;
@@ -313,15 +313,15 @@ nav ul li {
 }
 
 .hero-img {
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
 }
 
 .bio {
-  width: 400px;
-  max-height: 200px;
-  border-radius: 10px;
-  padding-left: 10px;
+  width: 25rem;
+  max-height: 12.5rem;
+  border-radius: 0.625rem;
+  padding-left: 0.625rem;
 }
 
 .bio-title {
@@ -336,26 +336,25 @@ nav ul li {
   line-height: var(--line-height);
   padding: 0.3rem 0;
   color: #fcfcfc;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.094rem;
 }
-
 /* Button on hero section */
 .visit-link{
   padding: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .hero-btn-1, .hero-btn-2{
   padding: 0.5rem 1rem;
   border: 1px solid var(--pink-color);
   background-color: var(--pink-color);
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   text-decoration: none;
   color: #fff;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.094rem;
 }
 .hero-btn-2{
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 .hero-btn-1:hover, .hero-btn-2:hover{
   border: 1px solid var(--primary-shadow);
@@ -374,7 +373,6 @@ nav ul li {
   font-family: var(--dongle-font);
   font-size: 2rem;
 }
-
 /* ------------------ Skill Section--------------------- */
  .skill-section {
   background-color: #FFFAF0;
@@ -387,7 +385,7 @@ nav ul li {
 }
 
 /* -----Section heading with shadow outline----- */
-.section-heading{
+.section-heading {
   font-size: clamp(1.5rem, 10vw, 2.5rem);
   text-transform: uppercase;
   font-family: var(--vollkorn);
@@ -407,7 +405,7 @@ nav ul li {
   font-family: var(--vollkorn);
   letter-spacing: 0.2rem;
   color: transparent;
-  -webkit-text-stroke: 1.5px var(--primary-shadow);
+  -webkit-text-stroke: 0.094rem var(--primary-shadow);
   z-index: -1;
 }
 /* -----End of Section heading with shadow outline----- */
@@ -417,7 +415,7 @@ nav ul li {
 
 .skill li{
   margin: 5px 0;
-  padding: 10px;
+  padding: 0.625rem;
   list-style: none;
 }
 
@@ -426,14 +424,14 @@ nav ul li {
   display: block;
   height: 12px;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
+  border-radius: 0.625rem;
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px  rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 .bar:hover{
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px  rgba(0, 0, 0, 0.22);  
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 0.625rem 0.625rem  rgba(0, 0, 0, 0.22);  
 }
 .bar span{
   height: 12px;
@@ -642,22 +640,21 @@ nav ul li {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   align-items: start;
 }
-@media (max-width: 60em){
+@media (max-width: 60rem){
  .card-grid-container{
    grid-gap: 0.5rem;
  } 
 }
 
-.card-grid-item{
+.card{
   background-color: var(--eggshell-color);
   border-radius: 0.4rem;
-  overflow: hidden;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: 0.2s;
   padding: 1rem;
 }
-.card-grid-item:hover{
+.card:hover{
   transform: translateY(-0.5%);
   box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
 }
@@ -731,7 +728,7 @@ nav ul li {
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0 3px 0.625rem var(--secondary-shadow);
 }
 
 .contact-form-container label {
@@ -747,8 +744,8 @@ nav ul li {
 
 .contact-form-container .input-field {
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
   border-radius: 5px;
   border: none;
   border: 2px outset var(--primary-color);
@@ -763,8 +760,8 @@ nav ul li {
 
 .submit-btn {
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
+  padding: 0.625rem;
+  margin: 0.625rem 0;
   background-color: #fff;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
@@ -814,17 +811,8 @@ footer {
 }
 
 /* Responsive Layout for mobile devices */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 60rem) {
 
-  
-.hero-container{
-  width: 100%;
-  background-size: cover;
-}
-.hero, .skills{
-  grid-template-columns: 1fr;
-  grid-template-areas: 'right-column' 'left-column';
-}
 nav {
   padding: 1.5rem 1rem;
 }
@@ -833,14 +821,14 @@ nav ul {
   position: fixed;
   background: linear-gradient(185deg, rgba(195,69,157,1) 19%, rgba(46,40,172,1) 100%);
   flex-direction: column;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   font-family: var(--josefin-sans);
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 1.5rem;
-  top: 86px;
+  top: 5.375rem;
   left: 10%;
-  width: 80%;
+  width: 100%;
   text-align: center;
   transform: translateX(120%);
   transition: transform 0.5s ease-in;
@@ -857,20 +845,24 @@ nav ul li {
 nav ul.show {
   transform: translateX(0);
 }
-
 .hero-container{
   width: 100%;
   background-size: cover;
+  margin-top: -5rem;
 }
-
 .hero img {
-  height: 200px;
-  width: 200px;
+  height: 12.5rem;
+  width: 12.5rem;
 }
 
 .bio {
   margin-top: 0.5rem;
   width: 25rem;
+}
+.visit-link{
+  padding-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* More about me */
@@ -880,13 +872,12 @@ nav ul.show {
 }
 
 .about-text {
-  text-align: center;
   font-family: var(--dongle-font);
 }
 
 /* skill section */
 .skill{
-  width: 300px;
+  width: 18.75rem;
   padding: 0rem;
 }
 .hero, .skills{
@@ -915,14 +906,14 @@ nav ul.show {
     position: fixed;
     background: linear-gradient(185deg, rgba(195,69,157,1) 19%, rgba(46,40,172,1) 100%);
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     font-family: var(--josefin-sans);
     font-weight: bold;
     letter-spacing: 2px;
     font-size: 1.5rem;
-    top: 86px;
+    top: 5.375rem;
     left: 10%;
-    width: 80%;
+    width: 100%;
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
@@ -942,17 +933,23 @@ nav ul.show {
 
   .hero-container{
     width: 100%;
+    margin-top: -5rem;
     background-size: cover;
   }
 
   .hero img {
-    height: 200px;
-    width: 200px;
+    height: 12.5rem;
+    width: 12.5rem;
   }
 
   .bio {
     margin-top: 0.5rem;
     width: 25rem;
+  }
+  .visit-link{
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   /* More about me */
@@ -962,13 +959,12 @@ nav ul.show {
   }
 
 .about-text {
-    text-align: center;
     font-family: var(--dongle-font);
   }
 
   /* skill section */
   .skill{
-    width: 300px;
+    width: 18.75rem;
     padding: 0rem;
   }
   .hero, .skills{
@@ -990,8 +986,8 @@ nav ul.show {
 @media screen and (max-width: 420px) {
   .hero-img {
     padding-left: 0px;
-    height: 200px;
-    width: 200px;
+    height: 12.5rem;
+    width: 12.5rem;
     border-radius: 50%;
   }
 
@@ -1002,6 +998,7 @@ nav ul.show {
   .hero-container{
     width: 100%;
     background-size: cover;
+    margin-top: -5.5rem;
   }
   .contact-form-container {
     max-width: 17.75rem;

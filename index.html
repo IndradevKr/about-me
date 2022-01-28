@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO  -->
+    <meta name="description" content="Hi, I am Indradev Kumar Mahato. I am a full-stack web developer. To know more about me and my skills, visit the link!">
+    <meta property="og:title" content="Indradev Kuamr Mahato" />
+    <meta property="og:type" content="portfolio" />
+    <meta property="og:url" content="https://indradevkr.github.io/about/" />
+    <meta property="og:image" content="https://scontent.fbir1-1.fna.fbcdn.net/v/t39.30808-1/c0.12.200.200a/p200x200/243169695_1493800224287059_8621876606977218110_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=7206a8&_nc_ohc=qDkiHJaRRJUAX94cYpH&_nc_ht=scontent.fbir1-1.fna&oh=00_AT-mPW0opTFSt3Ai-SqdzFNUepei4rAqkH4ZMJr5c7CXfQ&oe=61F7F7DB" />
+
 
     <!--CSS Styles -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-
     <!-- Favicons -->
     <link
       rel="apple-touch-icon"
@@ -29,12 +34,13 @@
     />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
+    <!-- Data-aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Indradev Mahato</title>
   </head>
 
@@ -59,11 +65,11 @@
             <div class="left-column"> 
 
               <div class="bio">
-                <h2 class="bio-title">About Me</h2>
-                <p class="bio-text">I'm a full-stack web developer. I create beautiful, usable, professional websites using the best practice accessibility and the latest web standards guidelines, resulting in semantic and SEO friendly.</p>
+                <h2 class="bio-title" data-aos="zoom-in">About Me</h2>
+                <p class="bio-text" data-aos="zoom-in">I'm a full-stack web developer. I create beautiful, usable, professional websites using the best practice accessibility and the latest web standards guidelines, resulting in semantic and SEO friendly.</p>
               </div>
 
-              <div class="visit-link">
+              <div class="visit-link" data-aos="zoom-in">
                 <a href="./Indradev Kumar Mahato.pdf" class="hero-btn-1" download>Download Resume</a>
                 <a href="#projects" class="hero-btn-2">See Projects</a> 
               </div>
@@ -91,27 +97,31 @@
       </section>
     </div>
     <!-- More about -->
-    <h2 class="section-heading" data-outline="More About Me" data-aos="zoom-in-up">More About Me</h2>
-    <section class="more-about" data-aos="zoom-in-right">
-      <p class="about-text">
+    <h2 class="section-heading" data-outline="More About Me" data-aos="zoom-in">More About Me</h2>
+    <section class="more-about" data-aos="fade-right"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
+      <p class="about-text about-me">
         Hi, I am Indradev Kumar Mahato, a full-stack web developer focused on crafting great web experiences. Designing and coding have been my passion since the day I started working with computers. I enjoy creating beautifully designed, intuitive and functional websites. 
       </p>
-      <p class="about-text">
+      <p class="about-text about-me" >
         I am a computer science graduate with a keen interest in full-stack web development.<br/>
         I am very enthusiastic about looking for an opportunity to use my technical skills to contribute to organizational growth and enhance my skills.
       </p>
-      <p class="about-text">
+      <p class="about-text about-me">
         Interested in working together,<br/>
         <a href="#contact">Reach out!</a>
       </p>
     </section>
 
     <!-- Skills section -->
-    <h2 class="section-heading" data-outline="Skills" data-aos="zoom-in-up">Skills</h2>
+    <h2 class="section-heading" data-outline="Skills" data-aos="zoom-in">Skills</h2>
         <section class="skill-section" id="skills">
           <div class="skills">
             
-            <div class="left-column" data-aos="fade-right"> 
+            <div class="left-column" data-aos="fade-right"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"> 
               <div class="skill">
                 <li>
                   <h3 class="skill-title">html</h3>
@@ -150,7 +160,9 @@
               </div>
             </div>
 
-            <div class="right-column" data-aos="fade-left"> 
+            <div class="right-column" data-aos="fade-left"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"> 
               <div class="skill">
                 <li>
                   <h3 class="skill-title">Python</h3>
@@ -192,11 +204,10 @@
           </section>
 
     <!-- Projects section -->
-    <section class="projects-container" id="projects" data-aos="zoom-in-left">
-      <h2 class="section-heading" data-outline="Projects Completed" data-aos="zoom-in-up">
+    <section class="projects-container" id="projects">
+      <h2 class="section-heading" data-outline="Projects Completed" data-aos="zoom-in">
         Projects Completed
       </h2>
-      <div class="carousel">  
         <div class="projects">
           <div class="card-grid-container">
             
@@ -212,7 +223,7 @@
               </div>
             </div>
 
-            <div class="card-grid-item">
+            
               <div class="card">
                 <img src="./assets/images/hamrobajar.png" class="card-img" alt="" />
                 <div class="card-content">
@@ -224,9 +235,7 @@
                   <a href="https://github.com/IndradevKr/ecommerceProject" class="card-button" target="_blank">Explore<span>&rarr;</span> </a>
                 </div>
               </div>
-            </div>
-
-            <div class="card-grid-item">
+            
               <div class="card">
                 <img src="./assets/images/form.png" class="card-img" alt="" />
                 <div class="card-content">
@@ -238,9 +247,8 @@
                   <a href="https://codepen.io/Indradev/details/rNzKOEo" class="card-button" target="_blank">View on codepen<span>&rarr;</span> </a>
                 </div>
               </div>
-            </div>
           
-            <div class="card-grid-item">
+            
               <div class="card">
                 <img src="./assets/images/youtube.jpg" class="card-img" alt="" />
                 <div class="card-content">
@@ -251,9 +259,8 @@
                   <a href="https://github.com/IndradevKr/youtube-downloader" class="card-button" target="_blank">Explore<span>&rarr;</span> </a>
                 </div>
               </div>
-            </div>
 
-            <div class="card-grid-item">
+            
               <div class="card">
                 <img src="./assets/images/profile-card.png" class="card-img" alt="" />
                 <div class="card-content">
@@ -264,7 +271,6 @@
                   <a href="https://github.com/IndradevKr/profile-card" class="card-button" target="_blank">Explore<span>&rarr;</span> </a>
                 </div>
               </div>
-            </div>
 
           </div>
         </div>
@@ -272,10 +278,12 @@
     </section>
 
     <!-- Contact section -->
-    <h2 class="section-heading" data-outline="Contact Me" data-aos="zoom-in-up">Contact Me</h2>
-    <section class="contact" id="contact" data-aos="zoom-in-right">
+    <h2 class="section-heading" data-outline="Contact Me" data-aos="zoom-in">Contact Me</h2>
+    <section class="contact" id="contact">
       <div class="contact-section">
-      <div class="contact-form-container">
+      <div class="contact-form-container" data-aos="fade-right"
+      data-aos-offset="100"
+      data-aos-easing="ease-in-sine">
         <div class="contact-form">
           <form action="mailto:indradevkr8@gmail.com" method="POST">
             <div class="form-control">
@@ -392,6 +400,7 @@
     </footer>
   </div>
     <!-- Website scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="assets/js/script.js"></script>
 
     <!-- Ion icons scripts -->
@@ -403,14 +412,12 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
-   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        offset: 260,
+        offset: 100,
         duration: 950,
       });
-    </script>  
+    </script>
   </body>
 </html>
